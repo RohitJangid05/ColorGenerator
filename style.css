@@ -17,10 +17,12 @@ body {
     justify-content: center;
     row-gap: 20px;
     align-items: center;
+    padding: 20px;
 }
 
 #main-container {
     width: 50%;
+    max-width: 600px;
     background-color: #ffffff;
     color: #333;
     padding: 20px 40px;
@@ -35,6 +37,7 @@ body {
 #main-container>h1 {
     padding: 20px;
     border-radius: 15px;
+    text-align: center;
 }
 
 #main-container>.copy-holder {
@@ -51,7 +54,6 @@ body {
 #main-container>.copy-holder>input {
     border: none;
     outline: none;
-    height: 100%;
     font-size: 16px;
     width: 82%;
 }
@@ -96,4 +98,40 @@ body {
 .button:hover {
     background-color: #f0f0f0;
     transform: translateY(-2px);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    #main-container {
+        width: 80%;
+        padding: 15px 20px;
+    }
+
+    #main-container>.copy-holder>input {
+        font-size: 14px;
+        width: 70%;
+    }
+
+    .button {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    #main-container {
+        width: 100%;
+        padding: 15px;
+    }
+
+    #main-container>.copy-holder>input {
+        font-size: 12px;
+        width: 60%;
+    }
+
+    .button {
+        padding: 8px 15px;
+        font-size: 12px;
+        margin: 5px;
+    }
 }
